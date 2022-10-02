@@ -1,6 +1,6 @@
 {
   "name": "@jop-software/astro-matomo",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Matomo integration for Astro",
   "type": "module",
   "keywords": [
