@@ -3,9 +3,23 @@ const createPlugin = (options) => {
 		name: "@jop-software/astro-matomo",
 		hooks: {
 			"astro:config:setup": async ({ config, injectScript }) => {
+				/**
+				 * @prop {string} host - The URL to compare window.location.host to, to determine weather we should track the user or not.
+				 */
+				const matomo = {
+					host: "",
+				};
+
+				if (config.site) {
+					let url = new URL(config.site);
+					matomo.host = url.host;
+				}
+
 				injectScript(
 					"page",
-					`import { init } from '@jop-software/astro-matomo/matomo.js'; init('${options.baseUrl}', ${options.siteId});`
+					`import { init } from '@jop-software/astro-matomo/matomo.js'; window.matomo = ${JSON.stringify(
+						matomo
+					)}; init('${options.baseUrl}', ${options.siteId});`
 				);
 			},
 		},
