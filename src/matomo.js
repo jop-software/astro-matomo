@@ -1,4 +1,15 @@
 export function init(baseUrl, siteId) {
+	// Skip tracking when either window.matomo.host is emptry or it does not match the current host.
+	if (
+		window.matomo.host !== "" &&
+		window.location.host !== window.matomo.host
+	) {
+		console.info(
+			`[@jop-software/astro-matomo]: Skip tracking because the host does not match.`
+		);
+		return;
+	}
+
 	var _paq = (window._paq = window._paq || []);
 	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 	_paq.push(["trackPageView"]);
