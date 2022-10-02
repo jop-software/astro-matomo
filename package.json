@@ -1,0 +1,30 @@
+{
+  "name": "@jop-software/astro-matomo",
+  "version": "0.1.0",
+  "description": "Matomo integration for Astro",
+  "type": "module",
+  "keywords": [
+    "astro-integration",
+    "astro-component",
+    "matomo",
+    "analytics",
+    "tracking"
+  ],
+  "contributors": [
+    {
+      "name": "Johannes Przymusinski",
+      "email": "johannes.przymusinski@jop-software.de",
+      "url": "https://jop-software.de"
+    }
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./matomo.js": "./src/matomo.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/index.js",
+    "matomo.js"
+  ],
+  "license": "PROPRIETARY"
+}
