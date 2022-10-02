@@ -26,7 +26,7 @@
     "src/index.js",
     "matomo.js"
   ],
-  "license": "PROPRIETARY",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "prettier:check": "prettier --check src",
     "prettier:write": "prettier --write src"
