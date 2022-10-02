@@ -1,6 +1,6 @@
 {
   "name": "@jop-software/astro-matomo",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Matomo integration for Astro",
   "type": "module",
   "keywords": [
@@ -10,7 +10,6 @@
     "analytics",
     "tracking"
   ],
-  "private": "false",
   "contributors": [
     {
       "name": "Johannes Przymusinski",
