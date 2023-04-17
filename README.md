@@ -24,4 +24,4 @@ export default defineConfig({
 });
 ```
 
-<div align=center>&copy 2022, <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></div>
+<div align=center>&copy 2022-2023, <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></div>
