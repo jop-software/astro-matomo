@@ -4,6 +4,12 @@
 
 > GDRP friendly tracking in your astro app / site 🚀
 
+## Installation
+
+```console
+npm install @jop-software/astro-matomo
+```
+
 ## Usage
 
 ```js
