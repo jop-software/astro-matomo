@@ -4,6 +4,12 @@
 
 > GDRP friendly tracking in your astro app / site 🚀
 
+## Installation
+
+```console
+npm install @jop-software/astro-matomo
+```
+
 ## Usage
 
 ```js
@@ -12,10 +18,10 @@
 import matomo from '@jop-software/astro-matomo';
 
 export default defineConfig({
+  // We only track site views when this matches the host the user is on.
+  // If the configuration is empty, every page view gets tracked.
+  site: "https://example.com",
   integrations: [
-    // We only track site views when this matches the host the user is on.
-    // If the configuration is empty, every page view gets tracked.
-    site: "https://example.com",
     matomo({
       baseUrl: "https://analytics.example.com/",
       siteId: 1
@@ -24,4 +30,4 @@ export default defineConfig({
 });
 ```
 
-<div align=center>&copy 2022, <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></div>
+<div align=center>&copy 2022-2023, <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></div>
