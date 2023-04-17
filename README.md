@@ -12,10 +12,10 @@
 import matomo from '@jop-software/astro-matomo';
 
 export default defineConfig({
+  // We only track site views when this matches the host the user is on.
+  // If the configuration is empty, every page view gets tracked.
+  site: "https://example.com",
   integrations: [
-    // We only track site views when this matches the host the user is on.
-    // If the configuration is empty, every page view gets tracked.
-    site: "https://example.com",
     matomo({
       baseUrl: "https://analytics.example.com/",
       siteId: 1
