@@ -6,10 +6,29 @@
 
 ## Installation
 
+### Installation using the Astro CLI
+
+Using the Astro CLI is the [recommended way](https://docs.astro.build/en/guides/integrations-guide/#automatic-integration-setup) to setup integrations in Astro.
+
 ```console
-npm install @jop-software/astro-matomo
+# npm
+npx astro add @jop-software/astro-matomo
+
+# pnpm
+pnpm dlx astro add @jop-software/astro-matomo
 ```
 
+### Manual Installation
+
+When the automatic setup from Astro is not an option for you, feel free to install the package manually.
+
+```console
+# npm
+npm install @jop-software/astro-matomo
+
+# pnpm
+pnpm add @jop-software/astro-matomo
+```
 ## Usage
 
 ```js
