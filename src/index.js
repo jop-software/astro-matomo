@@ -17,9 +17,9 @@ const createPlugin = (options) => {
 
 				injectScript(
 					"page",
-					`import { init } from '@jop-software/astro-matomo/matomo.js'; window.matomo = ${JSON.stringify(
+					`import { init as jopsoftware_matomo_init } from '@jop-software/astro-matomo/matomo.js'; window.matomo = ${JSON.stringify(
 						matomo
-					)}; init('${options.baseUrl}', ${options.siteId});`
+					)}; jopsoftware_matomo_init('${options.baseUrl}', ${options.siteId});`
 				);
 			},
 		},
